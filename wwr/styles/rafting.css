@@ -5,8 +5,20 @@
     --accent2-color: #81B29A;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
 
+h1 {
+    
+        font-family: 'atma', sans-serif;
+        font-size: 25px;
+
+}
+
+h2 {
+    font-family: 'zain', sans-serif;
+        font-size: 16px;
+
+
+}
 
 .hero {
     position: relative;
