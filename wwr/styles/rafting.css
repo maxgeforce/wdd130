@@ -5,69 +5,37 @@
     --accent2-color: #81B29A;
 }
 
-
-h1 {
-    
-        font-family: 'atma', sans-serif;
-        font-size: 25px;
-
+body {
+    font-family: 'Atma', sans-serif;
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
 }
 
-h2 {
-    font-family: 'zain', sans-serif;
-        font-size: 16px;
-
-
-}
-
-.hero {
-    position: relative;
-    width: 600px; 
-    margin: 0 auto; 
-}
-
-.hero img:first-of-type {
-    display: block; 
-    width: 100%; 
-    height: auto;
-}
-
-.hero article {
-    position: absolute;
-    top: 20%; 
-    left: 65%; 
-    width: 25%; 
-    background-color: rgba(255, 255, 255, 0.8); 
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-.hero article img {
-    width: 50px; 
-    height: auto; 
-    margin-top: 10px; 
-    display:block;    
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-}
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #0066cc; 
+    display: grid;
+    grid-template-columns: auto 1fr; /* Two columns: logo (auto) and navigation bar (1fr) */
+    align-items: center; /* Vertically center the content */
+    background-color: var(--accent1-color);
     color: white;
+    padding: 20px;
+    gap: 20px; /* Adds space between logo and navigation */
 }
 
-header img {
-    height: 50px; 
+header .logo {
+    justify-self: start; /* Align the logo to the start (left) */
+}
+
+header .logo img {
+    height: 50px;
 }
 
 nav ul {
-    display: flex;
+    display: flex; /* Keeps the navigation links horizontally aligned */
     list-style: none;
     margin: 0;
     padding: 0;
+    justify-content: flex-end; /* Aligns the navigation bar to the right */
 }
 
 nav ul li {
@@ -82,62 +50,116 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
-    color: #ffcc00; 
+    color: var(--secondary-color);
 }
 
-footer {
+main {
+    padding: 20px;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
     text-align: center;
-    background-color: #0066cc; 
-    padding: 20px 0;
-    color: white;
 }
 
-footer p {
-    margin-bottom: 10px;
+.hero img:first-of-type {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
-footer .socialLinks {
-    display: flex;
-    justify-content: center;
-    gap: 15px; 
+.hero article {
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-footer .socialLinks a img {
-    width: 40px; 
-    height: 40px; 
-    border-radius: 50%; 
-    border: 2px solid white;
-    transition: transform 0.3s ease; 
-}
-
-footer .socialLinks a img:hover {
-    transform: scale(1.1); 
+.hero article img {
+    width: 50px;
+    height: auto;
+    margin-top: 10px;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 section {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    text-align: center; 
-    margin: 20px 0; 
+    text-align: center;
+    margin: 40px 0;
 }
 
 section h2 {
-    font-size: 1.8rem; 
-    margin-bottom: 10px; 
+    font-family: 'Zain', sans-serif;
+    font-size: 1.8rem;
+    color: var(--accent1-color);
+    
 }
 
 section p {
-    font-size: 1rem; 
-    margin-bottom: 15px; 
-    max-width: 600px; 
+    max-width: 600px;
+    margin: 0 auto 20px;
 }
 
 section img {
-    width: 200px; 
-    height: auto; 
-    margin: 10px; 
+    width: 200px;
+    height: auto;
+    margin: 10px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+footer {
+    display: flex; /* Flexbox layout for horizontal alignment */
+    justify-content: space-between; /* Ensures space between text and icons */
+    align-items: center; /* Vertically aligns the content */
+    background-color: var(--accent1-color);
+    color: white;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0; /* Removes default spacing for consistent alignment */
+    display: flex;
+    margin-left: auto;
+}
+
+footer .social-icons {
+    display: flex; /* Aligns the icons horizontally */
+    gap: 15px; /* Adds space between the icons */
+    margin-left: auto; /* Pushes the icons to the far right */
+    order: 2; /* Ensures icons appear after the paragraph */
+}
+
+footer .social-icons a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Makes the icons circular */
+    border: 2px solid white;
+    transition: transform 0.3s ease; /* Adds a hover effect */
+}
+
+footer .social-icons a img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery-item img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
