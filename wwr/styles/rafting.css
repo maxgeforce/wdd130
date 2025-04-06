@@ -57,63 +57,70 @@ main {
     padding: 20px;
 }
 
-.hero {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: 20px auto;
-    text-align: center;
+#rafting .content {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 20px; 
 }
 
-.hero img:first-of-type {
-    display: block;
-    width: 100%;
-    height: auto;
+#rafting .content p {
+    flex: 1; 
+    margin: 0; 
 }
 
-.hero article {
-    position: absolute;
-    top: 20%;
-    left: 65%;
-    transform: translate(-50%, -50%);
-    width: 25%;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+#rafting .content img {
+    width: auto; 
+    height: 100%; 
+    max-height: 300px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
-
-.hero article img {
-    width: 50px;
-    height: auto;
-    margin-top: 10px;
-    display: block;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 section {
-    text-align: center;
     margin: 40px 0;
+    padding: 20px;
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+section h1,
 section h2 {
     font-family: 'Zain', sans-serif;
-    font-size: 1.8rem;
     color: var(--accent1-color);
-    
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-section p {
-    max-width: 600px;
-    margin: 0 auto 20px;
+section .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 20px; 
 }
 
 section img {
-    width: 200px;
+    max-width: none;
     height: auto;
-    margin: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--accent2-color);
+    flex: 1; 
+    margin: 0;
+}
+
+
+#history .content {
+    flex-direction: column;
+    text-align: center;
+}
+
+#history img {
+    margin: 20px auto; 
 }
 
 footer {
@@ -151,15 +158,25 @@ footer .social-icons a img:hover {
     transform: scale(1.1); 
 }
 .gallery {
-    display: flex;
+    display: flex; 
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    gap: 20px; 
+    flex-wrap: nowrap; 
 }
 
-.gallery-item img {
-    width: 200px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.gallery figure {
+    text-align: center; 
+}
+
+.gallery img {
+    width: 150px; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.gallery figcaption {
+    font-size: 0.9rem;
+    margin-top: 8px;
+    color: var(--accent2-color); 
 }
