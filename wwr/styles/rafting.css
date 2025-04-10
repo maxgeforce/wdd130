@@ -1,8 +1,8 @@
 :root {
-    --primary-color: rgb(240, 240, 240); /* Higher contrast against text */
-    --secondary-color: rgb(200, 80, 70); /* Darker for better visibility */
-    --accent1-color: #2C2F3B; /* Darkened for stronger contrast */
-    --accent2-color: #76A893; /* Adjusted for better readability */
+    --primary-color: rgb(240, 240, 240); 
+    --secondary-color: rgb(200, 80, 70);
+    --accent1-color: #2C2F3B; 
+    --accent2-color: #76A893; 
 }
 
 body {

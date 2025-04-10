@@ -1,8 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Your+Font+Family&display=swap');
+
+
 :root {
-    --primary-color: #ffffff; /* Brighter background for better contrast */
-    --primary-text-color: #333333; /* Darker text for readability */
-    --accent1-color: #2B2D42; /* Darker accent color for header/footer */
-    --accent2-color: #6A994E; /* Richer green for improved text visibility */
+    --primary-color: #ffffff; 
+    --primary-text-color: #333333; 
+    --accent1-color: #2B2D42; 
+    --accent2-color: #6A994E; 
+    
 }
 
 body {
@@ -150,8 +155,8 @@ section p {
 }
 
 .contact-form button {
-    color: #00FF00; /* Bright lime green */
-    background-color: #000000; /* Black */ 
+    color: #00FF00; 
+    background-color: #000000; 
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -180,8 +185,8 @@ footer p {
     margin: 0;
     display: flex;
     margin-left: auto;
-    color: #CCE7FF; /* Light sky blue */
-    background-color: #00274D; /* Dark navy blue */
+    color: #CCE7FF; 
+    background-color: #00274D; 
 }
 
 footer .social-icons {
