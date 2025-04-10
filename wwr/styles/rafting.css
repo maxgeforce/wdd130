@@ -1,8 +1,8 @@
 :root {
-    --primary-color: rgb(244, 241, 222);
-    --secondary-color: rgb(224, 122, 95);
-    --accent1-color: #3D405B;
-    --accent2-color: #81B29A;
+    --primary-color: rgb(240, 240, 240); /* Higher contrast against text */
+    --secondary-color: rgb(200, 80, 70); /* Darker for better visibility */
+    --accent1-color: #2C2F3B; /* Darkened for stronger contrast */
+    --accent2-color: #76A893; /* Adjusted for better readability */
 }
 
 body {
@@ -137,6 +137,7 @@ footer p {
     margin: 0;
     display: flex;
     margin-left: auto;
+    color: white;
 }
 
 footer .social-icons {
