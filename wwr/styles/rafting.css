@@ -92,6 +92,13 @@ section h2 {
     margin-bottom: 20px;
 }
 
+.details p {
+    color: #000000;
+}
+
+.employees p {
+    color: #000000;
+}
 section .content {
     display: flex;
     align-items: center;
@@ -166,6 +173,10 @@ footer .social-icons a img {
 
 footer .social-icons a img:hover {
     transform: scale(1.1); 
+}
+
+footer .social-icons p a {
+    color: #ccc;
 }
 .gallery {
     display: flex; 
@@ -376,6 +387,10 @@ footer .social-icons a img:hover {
     margin-bottom: 15px;
 }
 
+.contact-form .radio-group p {
+    color: #000000;
+}
+
 .contact-form .radio-group label {
     margin-bottom: 5px;
     font-weight:bold;
@@ -399,4 +414,8 @@ footer .social-icons a img:hover {
 
 .contact-form button:hover {
     background-color: #45a049;
+}
+
+.details {
+    color: black; /* Ensures text in <p> is black */
 }
